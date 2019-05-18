@@ -61,6 +61,21 @@ addb %bh, 0x10
 shll $1, %edi
 ```
 
+### jmp
+jmp, ja, jae  ;
+
+### logical instructions
+```
+; leave only low bit
+ansb $1, %cl
+
+; or
+orw %bx, (%rax)
+
+; xor
+xorl 4(%rsp), %eax
+```
+
 ### eflags
 CF -
 ZF -
